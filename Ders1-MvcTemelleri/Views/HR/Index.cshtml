@@ -1,0 +1,25 @@
+﻿@model IEnumerable<HR>
+
+<h2>Kişi Listesi</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>Yaş</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var bjk in Model)
+        {
+            <tr>
+                <td>@bjk.FirstName</td>
+                <td>@bjk.lastName</td>
+                <td>@bjk.Age</td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>
